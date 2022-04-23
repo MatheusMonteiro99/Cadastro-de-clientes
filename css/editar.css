@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #0000000c;
+    font-family: 'karla', sans-serif;
+}
+
+header {
+    background-color: #3d86b3;
+    margin-bottom: 40px ;
+}
+
+header h1 {
+    margin-left: 2vh;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+label {
+    margin-top: -20px;
+    margin-left: 2vh;
+    color: #3d86b3;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    position: left;
+    width: 25vw;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: -1px 2px 5px #3d86b33e;
+    margin: 2vh 0 0 2vh;
+}
+
+
+.modal-header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+}
+
+.modal-field{
+    width: 80%;
+    height: 40px;
+    box-shadow: 0 0 2px #13415e;
+    font-size:1rem;
+    border: none;
+    outline: none;
+    
+}
+
+
+.modal-footer{
+    background-color: inherit;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.buttonAdd{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: #13CE66 ;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.buttonAdd:hover{
+    background-color: #0b9649;
+}
+
+@media (max-width:480px){
+    .modal{
+        top:100%;
+        transition: all 1s ease;
+    }
+    .modal.active{
+        top:0;
+    }
+    .modal-content{
+        margin:0;
+        width:100%;
+        position:fixed;
+    }
+    .modal-field{
+        width:100%;
+    }
+}
